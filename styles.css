@@ -1,0 +1,409 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box; 
+    -webkit-font-smoothing: antialiased;   /* Zanimljivo. */
+}
+
+body {
+    background-color: #FF9319; 
+}
+
+header {
+	display: flex;
+    height: 100px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Logo. */
+
+    .logo-svg {
+    background-size: contain; /* Ensures the image scales correctly */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-position: center; /* Centers the image */
+    height: 100px;
+    width: 100px;
+    margin-top: 33px; 
+    background-color: transparent;
+}
+
+/* Navigation bar. */
+
+nav .navigation-bar {
+    right: -100px;
+}
+	
+nav a {
+	color: #500015;
+	font-family: "GeorgiaPro";
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 5px; /* Add padding to make them look like buttons */
+    background-color: transparent; /* Button background color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure it behaves like a button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover {
+    color: #DF1713;
+    transform: scale(1.07);
+}
+
+nav a:active {
+    background-color: #500015; /* Darker color on active */
+    transform: scale(0.95); /* Slightly shrink on active */
+}
+
+/* ............ */
+
+h1 {
+	font-family: "fisterra-fora", sans-serif;
+	color:#ffffff;
+	font-size: 80px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center; /* Centers text horizontally */
+}
+
+h2 {
+	font-family: "fisterra-fora";
+	color: #ffffff;
+	font-size: 30px;
+}
+
+/* Media queries for responsive design - uraditi kasnije :) */
+
+input[type="email"] {
+    font-family: "GeorgiaPro"; 
+    background-color: white; /* Set background color to white */
+    color: #500015; /* Optional: Set text color to black for visibility */
+    border: 1px solid #ccc; /* Optional: Set a border color */
+    padding: 10px; /* Optional: Add padding for better appearance */
+    border-radius: 7px; /* Optional: Add rounded corners */
+    width: 50%; /* Optional: Make input field full-width */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+}
+
+button {
+    font-family: GeorgiaPro;
+}
+
+/* Add margin to individual main divs for vertical spacing */
+#main-1 {
+    width: 33.33%; /* Set width to one-third of the viewport */
+    text-align: center; /* Center text horizontally */
+	position: absolute;
+	left: calc((50% - 33.33% / 2) / 2); 
+	display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */   
+    margin-top: 140px; /* Adjust the vertical position */
+    top: 30px;
+}
+
+#main-2 {
+    width: 33.33%; /* Set width to one-third of the viewport */
+    text-align: center; /* Center text horizontally */
+	position: absolute;
+	left: calc((50% - 33.33% / 2) / 2); 
+	margin-bottom: 500px;
+	display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    display: flex;
+    justify-content: center;
+    margin-top: 550px; /* Adjust the vertical position */
+    top: 100px;
+}
+
+#main-3 {
+	position: absolute;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 710px; /* Adjust the vertical position */
+    left: calc((50% - 33.33% / 2) / 2); 
+    text-align: center;
+    justify-content: center;
+    width: 33.33%;
+    flex-direction: column;
+    display: block;
+    top: 75px;
+}
+
+footer {
+    position: absolute; /* or absolute, fixed depending on the layout */
+    bottom: 0;          /* If using absolute positioning */
+    width: 100%;        /* Ensure it spans the full width of the page */
+    z-index: 10;        /* Ensure it's not hidden behind other elements */
+    overflow: visible;  /* Ensure content is not clipped */
+    display: block;     /* Ensure it is not set to `none` */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    height: 100px;
+} 
+
+/* main buttons */
+
+/* main-1 button */
+
+#main-1 button {
+    background-color: #DF1713; 
+    color: white;            /* White text */ 
+    border: none;              /* Remove default border */
+    padding: 10px 20px;        
+    border-radius: 9px;        /* Rounded corners */
+    cursor: pointer;           /* Change cursor to pointer */
+    font-size: 16px;          
+    text-align: center;  
+    box-shadow: 0px 2px  4px #DF1713;     
+    position: relative; /* Establishes a positioning context for the button. Možda i ne treba ovde. */
+    top: -35px;         /* Moves the button up by 10 pixels. SUPER!!! */ 
+    font-family: "GeorgiaPro";  
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#main-1 button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+#main-1 button:hover::before {
+    transform: scale(1.1);
+}
+
+#main-1 button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+#main-1 button:hover::after {
+    transform: scale(1.1);
+}
+
+#main-1 button:hover {
+    transform: scale(1.1); /* Make the button slightly bigger */
+    box-shadow: 0 0 17px;
+}
+
+#main-1 button:active {
+    transform: scale(0.95);
+}
+
+/* main-3 button */
+
+#main-3 button {
+    background-color: #DF1713; 
+    color: white;            /* White text */
+    border: none;              /* Remove default border */
+    padding: 10px 20px;        
+    border-radius: 9px;        /* Rounded corners */
+    cursor: pointer;           /* Change cursor to pointer */
+    font-size: 16px;          
+    text-align: center; 
+    box-shadow: 0px 1px 2px #DF1713;
+    font-family: "GeorgiaPro"; 
+    size: -30%;  
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 1;
+    overflow: hidden;
+} 
+
+#main-3 button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+#main-3 button:hover::before {
+    transform: scale(1.1);
+}
+
+#main-3 button::after {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+#main-3 button:hover::after {
+    transform: scale(1.1);
+}
+
+#main-3 button:hover {
+    transform: scale(1.1); /* Make the button slightly bigger */
+    box-shadow: 0 0 15px;
+}
+
+#main-3 button:active {
+    transform: scale(0.95);
+}
+
+/* ................... */
+
+#main-2 p {
+    position: relative;
+    top: -30px;
+    color: #500015;
+    font-family: "GeorgiaPro";
+}
+
+/* Footer */
+
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left p {
+    color: #500015;
+    padding: 20px;
+    font-family: "fisterra-fora"; 
+}
+
+/* Footer: social icons */
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    border-radius: 50%;
+    padding: 10px; /* Adjusted padding to maintain spacing */
+    margin: 10px;
+    width: 35px; /* 30% smaller than the original 50px */
+    height: 35px; /* 30% smaller than the original 50px */
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.4s ease;
+}
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px #500015;
+  }
+  
+.footer-right {
+    display: flex; 
+    justify-content: flex-end ;
+    flex: 1;
+    font-family: "GeorgiaPro";
+    padding: 20px;
+}
+
+.footer-right .social-icons {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px; /* Space between social icons */
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #500015;
+  color: #FF9319;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #500015;
+  color: #FF9319;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #500015;
+  color: #FF9319;
+}
+
+/* .............. */
