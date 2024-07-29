@@ -9,3 +9,5 @@ I want website to be:
 - beautiful
 - simple to use
 - minimalistic
+- entertaining
+- educational
