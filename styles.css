@@ -7,6 +7,11 @@
 
 body {
     background-color: #ffffff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header */
@@ -72,7 +77,7 @@ h1 {
 	font-family: "fisterra-fora";
 	color: #500015;
     font-size: 39px;
-    margin-top: 160px; /* Add top margin to push it down below the header */
+    margin-top: 200px; /* Add top margin to push it down below the header */
     position: relative;
     width: 700px;
     text-align: center;
@@ -85,11 +90,18 @@ h1 {
     text-align: center;
 }
 
+.fig-1 {
+    font-size: 18px;
+    color: #500015;
+    font-family: "GeorgiaProLight"; 
+}
+
 article {
     width: 700px;
     width: 100%;
     padding: 20px; /* Optional: Add padding for better readability */
     font-size: 18px;
+    font-family: "GeorgiaProLight";
 }
 
 h2 {
@@ -109,6 +121,7 @@ h4 {
 	font-family: "fisterra-fora";
 	color: #500015;
 	font-size: 30px;
+    margin-bottom: 8px;
 }
 
 .container {
@@ -132,31 +145,94 @@ input[type="email"] {
     border: 1px solid #ccc; /* Optional: Set a border color */
     padding: 10px; /* Optional: Add padding for better appearance */
     border-radius: 7px; /* Optional: Add rounded corners */
-    width: 50%; /* Optional: Make input field full-width */
+    width: 40%; /* Optional: Make input field full-width */
     box-sizing: border-box; /* Include padding and border in the element’s total width and height */
 }
+
+/* Button */
 
 button {
     font-family: "GeorgiaPro";
 }
 
+#main-3 button {
+    background-color: #DF1713; 
+    color: white;            /* White text */
+    border: none;              /* Remove default border */
+    padding: 10px 20px;        
+    border-radius: 9px;        /* Rounded corners */
+    cursor: pointer;           /* Change cursor to pointer */
+    font-size: 16px;          
+    text-align: center; 
+    box-shadow: 0px 1px 2px #DF1713;
+    font-family: "GeorgiaPro"; 
+    size: -30%;  
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 1;
+    overflow: hidden;
+} 
+
+#main-3 button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+#main-3 button:hover::before {
+    transform: scale(1.1);
+}
+
+#main-3 button::after {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+#main-3 button:hover::after {
+    transform: scale(1.1);
+}
+
+#main-3 button:hover {
+    transform: scale(1.1); /* Make the button slightly bigger */
+    box-shadow: 0 0 15px;
+}
+
+#main-3 button:active {
+    transform: scale(0.95);
+}
+
 /* Footer */
 
 footer {
-    bottom: 0;          /* If using absolute positioning */
+    bottom: 0; 
+    left: 0;
+    right: 0;
     width: 100%;        /* Ensure it spans the full width of the page */
     z-index: 10;        /* Ensure it's not hidden behind other elements */
-    overflow: visible;  /* Ensure content is not clipped */
-    display: block;     /* Ensure it is not set to `none` */
+    overflow: visible;  /* Ensure content is not clipped */  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    left: 0;
     height: 70px;
     background-color: #FF9319;
-    position: relative; /* Changed from absolute */
+    position: relative;
     padding: 0 20px; /* Added padding */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
+    border: none;
 } 
 
 .footer-left, .footer-right {
@@ -244,7 +320,7 @@ footer {
     display: flex; 
     justify-content: flex-end ;
     flex: 1;
-    font-family: "GeorgiaPro";
+    font-family: "GeorgiaProLight";
     padding: 20px;
 }
 
@@ -277,51 +353,109 @@ footer {
 
 /* Media queries for responsive design - uraditi kasnije :) */
 
-.recommendations {
+#main-3 {
     display: flex;
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; 
-    margin: 20px 0; 
-    text-align: center;
-}
-
-recommendations aside {
-    display: inline-block; /* Ensure the aside element is sized to its content */
-}
-
-.recommendations ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-}
-
-.recommendations li {
-    margin-bottom: 10px; /* Add spacing between list items */
-}
-
-.recommendations a {
-    text-decoration: none; /* Remove underline from links */
-    color: #500015; /* Link color */
-    font-family: "GeorgiaPro"; /* Use the desired font */
-    transition: color 0.3s ease; /* Smooth transition for color change */
-}
-
-.recommendations a:hover {
-    color: #DF1713; /* Change color on hover */
-}
-
-#main-2 {
-    width: 700px;
-    text-align: center; /* Center text horizontally */
-	position: absolute;
-	display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
     justify-content: center;
+    align-items: center;
+    text-align: center; 
 }
 
-#main-2 p {
-    position: relative;
+#recommendations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#opt-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#email-collecting-section {
+    margin-top: 70px;
+    background-color: #FF9319;
+    border-radius: 27px;
+    height: 300px;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 4px 4px #cfb3ba;
+}
+
+.about {
     color: #500015;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.about-1 {
     font-family: "GeorgiaPro";
 }
 
+.about-2 {
+    font-family: "GeorgiaProLight";
+    text-align: left;
+    margin-top: 2px;
+}
+
+.about-3 {
+    font-family: "GeorgiaProLight";
+    text-align: left;
+    margin-top: 2px; 
+}
+
+.about-social-icons {
+    margin-bottom: 70px;
+    justify-content: center;
+    color: #500015;
+}
+
+.about-photo {
+    height: 100px;
+    width: 100px;
+}
+
+.blog-post-1 {
+    font-family: "GeorgiaProLight";
+    color: #500015;
+    font-size: 18px;
+    text-decoration-line: none;
+}
+
+.about-social-icons {
+    display: flex; /* Display icons in a row */
+    align-items: center; /* Align items vertically */
+}
+
+.about-social-icons ul {
+    list-style: none; /* Remove dots */
+    padding-top: 30px;
+    margin: 0;
+    display: flex; /* Ensure the list items are in a row */
+    margin: 0 auto; /* Center the list within its container */
+}
+
+.about-social-icons li {
+    margin-right: 10px; /* Space between icons */
+}
+
+/* Adjust the size of the icons */
+.about-social-icons i {
+    font-size: 24px; /* Increase the size of the icons */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.about-social-icons li:hover i {
+    color: #FF9319; /* Change to your desired hover color */
+}
