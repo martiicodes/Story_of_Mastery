@@ -94,6 +94,8 @@ h1 {
     font-size: 18px;
     color: #500015;
     font-family: "GeorgiaProLight"; 
+    display: flex;
+    justify-content: center;
 }
 
 article {
@@ -465,4 +467,10 @@ footer {
     height: 200px;
     width: 200px;
     margin-top: -65px;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
