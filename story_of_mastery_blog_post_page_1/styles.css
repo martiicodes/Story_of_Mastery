@@ -96,6 +96,8 @@ h1 {
     font-family: "GeorgiaProLight"; 
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 article {
@@ -111,6 +113,8 @@ h2 {
 	color: #500015;
 	font-size: 23px;
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 h3 {
@@ -473,4 +477,6 @@ figure {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 20px;
 }
+
