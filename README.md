@@ -8,7 +8,7 @@ I want to create a blog website which is:
 - entertaining
 - educational
 
-- challenging to make
+- challenging to create
 
 Tools for development:
 
