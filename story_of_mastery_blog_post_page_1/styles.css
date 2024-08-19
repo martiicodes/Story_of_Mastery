@@ -112,7 +112,14 @@ h2 {
 	font-family: "GeorgiaPro";
 	color: #500015;
 	font-size: 23px;
+<<<<<<< HEAD
     text-align: center;
+=======
+<<<<<<<< HEAD:story_of_mastery_blog_post_page_2/styles.css
+    text-align: center;
+========
+>>>>>>>> 2b26d5f (Updated blog post 1.):story_of_mastery_blog_post_page_1/styles.css
+>>>>>>> 2b26d5f (Updated blog post 1.)
     margin-bottom: 40px;
     margin-top: 40px;
 }
@@ -478,5 +485,28 @@ figure {
     justify-content: center;
     flex-direction: column;
     margin-top: 20px;
+<<<<<<< HEAD
 }
 
+=======
+<<<<<<<< HEAD:story_of_mastery_blog_post_page_2/styles.css
+}
+========
+    height: 420px;
+    width: 420px;
+}
+
+    
+.on-this-page-section {
+    margin-top: 70px;
+    background-color: #FF9319;
+    border-radius: 27px;
+    height: 350px;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 4px 4px #cfb3ba;
+}
+
+>>>>>>>> 2b26d5f (Updated blog post 1.):story_of_mastery_blog_post_page_1/styles.css
+>>>>>>> 2b26d5f (Updated blog post 1.)
