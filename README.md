@@ -23,3 +23,4 @@ Tools for design:
 - Adobe Illustrator
 - Adobe Animate
 - Adobe After Effects
+- Figma
