@@ -15,7 +15,7 @@ Tools for development:
 - HTML
 - CSS
 - JavaScript
-- Python/Django
+- Python / Django
 
 Tools for design:
 
