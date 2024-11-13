@@ -1,15 +1,5 @@
 # Story of Mastery
 
-This is my first website project.
-
-I want to create a blog website which is:
-
-- interactive
-- entertaining
-- educational
-
-- challenging to create
-
 Tools for development:
 
 - HTML
@@ -25,3 +15,8 @@ Tools for design:
 - Adobe Animate
 - Adobe After Effects
 - Figma
+
+Goals:
+- only one CSS
+- use www.storyofmastery.com domain
+-  
