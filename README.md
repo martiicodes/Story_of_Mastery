@@ -18,5 +18,7 @@ Tools for design:
 
 Goals:
 - only one CSS
-- use www.storyofmastery.com domain
--  
+- website icon
+- facebook pixel et cetera
+- subscribe section, email list
+- 
