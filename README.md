@@ -19,5 +19,5 @@ Goals:
 - only one CSS
 - website icon
 - facebook pixel et cetera
-- subscribe section, email list
+- functionsal opt-in section
 - 
