@@ -20,4 +20,3 @@ Goals:
 - website icon
 - facebook pixel et cetera
 - functionsal opt-in section
-- 
