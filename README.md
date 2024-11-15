@@ -4,7 +4,6 @@ Tools for development:
 
 - HTML
 - CSS
-- JavaScript
 - Python / Django
 - JavaScript
 
