@@ -7,10 +7,7 @@ Tools for development:
 - JavaScript
 
 Tools for design:
-- Adobe Photoshop
-- Adobe Illustrator
-- Adobe Animate
-- Adobe After Effects
+- Adobe Creative Cloud
 - Figma
 
 Goals:
