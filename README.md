@@ -17,6 +17,7 @@ Goals:
 - only one CSS
 - website icon
 - functionsal opt-in section
+- Facebook Pixel
 
 Analytics:
 - Google Analytics
