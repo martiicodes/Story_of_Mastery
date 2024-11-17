@@ -18,3 +18,4 @@ Goals:
 
 Analytics:
 - Google Analytics
+- Facebook Pixel... (u procesu)
