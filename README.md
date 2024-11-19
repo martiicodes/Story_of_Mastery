@@ -15,6 +15,7 @@ Goals:
 - website icon
 - functionsal opt-in section
 - Facebook Pixel
+- activate 'Read the Blog' button again
 
 Analytics:
 - Google Analytics
