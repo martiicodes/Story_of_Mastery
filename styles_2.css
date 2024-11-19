@@ -241,7 +241,7 @@ footer {
     align-items: center;
     height: 70px;
     background-color: #FF9319;
-    position: relative;
+    position: fixed;
     padding: 0 20px; /* Added padding */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow */
     border: none;
