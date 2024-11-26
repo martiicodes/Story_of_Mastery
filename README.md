@@ -20,3 +20,7 @@ Goals:
 Analytics:
 - Google Analytics
 - Facebook Pixel... (u procesu)
+
+Social media:
+- Linkedin
+- YouTube
