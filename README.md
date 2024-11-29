@@ -4,7 +4,7 @@ Tools for development:
 - HTML
 - CSS
 - Python / Django
-- JavaScript
+- JavaScript / React
 
 Tools for design:
 - Adobe Creative Cloud
