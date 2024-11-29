@@ -18,8 +18,8 @@ Goals:
 - activate 'Read the Blog' button again
 
 Analytics:
-- Google Analytics
-- Facebook Pixel... (u procesu)
+- Google Analytics...
+- Facebook Pixel...
 
 Social media:
 - Linkedin
